@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+/** random quotes styling*/
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, #606c88, #3f4c6b);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 60%;
+  background-image: linear-gradient(to right, #485563, #29323c);
+}
+.quote-icon {
+  top: 15px;
+  right: 15px;
+}
+.advice {
+  word-wrap: break-word;
+  font-family: "Madimi One", sans-serif;
+}
+.btn {
+  border-radius: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  .wrapper {
+    min-width:80%;
   }
 }
